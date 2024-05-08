@@ -48,7 +48,7 @@ int main() {
 
   std::random_device rd;
   std::mt19937_64 g(rd());
-  std::uniform_real_distribution<> dis(0.0, 1000.0);
+  std::uniform_real_distribution<> dis(0.0, 10000.0);
   std::generate(array.begin(), array.end(), [&]() { return dis(g); });
 
   std::string choose;
